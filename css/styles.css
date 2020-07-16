@@ -18,9 +18,18 @@ font-size: 26px;
 line-height: 1.2;
 letter-spacing: 0.03em;
 }
+.logo:hover, .logo:focus { color: var(--primary-text-color);}
 .logo .web {color: var(--accent-color);}
 }
 .link:hover .link:focus {
+	color: var(--accent-color);
+}
+a[href] {
+	color: var(--primary-text-color);
+	text-decoration: none;
+}
+a[href]:hover,
+a[href]:focus {
 	color: var(--accent-color);
 }
 .link {font-family: Roboto, sans-serif;
@@ -112,6 +121,7 @@ letter-spacing: 0.03em;
 	background-color: var(--footer-background-color);
 }
 .address {
+    font-style: normal;
     color: #ffffff;
     font-family: Roboto, sans-serif;
     font-weight: 400;
@@ -119,8 +129,9 @@ letter-spacing: 0.03em;
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-.address .text {
+.address.text {
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
@@ -146,14 +157,7 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-a {
-	color: var(--primary-text-color);
-	text-decoration: none;
-}
-a:hover,
-a:focus {
-	color: var(--accent-color);
-}
+
 .team {
 	background-color: var(--secondary-background-color);
 }
@@ -170,5 +174,29 @@ a:focus {
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
+    letter-spacing: 0.03em;
+}
+.projects .header {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.projects .text {
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);}
+.projects .description {
+    font-family: Roboto,sans-serif;
+    color: var(--button-text-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
 }
